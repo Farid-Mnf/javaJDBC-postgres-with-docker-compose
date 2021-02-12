@@ -9,5 +9,3 @@ COPY input_data.txt /app/
 RUN javac -cp ".:postgres-driver.jar" Main.java
 
 CMD java -cp ".:postgres-driver.jar" Main
-
-EXPOSE 8050

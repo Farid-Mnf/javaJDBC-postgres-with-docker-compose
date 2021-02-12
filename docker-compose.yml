@@ -10,7 +10,4 @@ services:
 
   client:
     build: ./java_client
-    restart: always
-    ports:
-      - "8050:8050"
 
