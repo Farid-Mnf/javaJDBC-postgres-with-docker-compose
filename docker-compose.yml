@@ -1,0 +1,16 @@
+version: "3.1"
+
+services:
+
+  postgres:
+    build: ./postgres_server
+    restart: always
+    ports:
+      - "5432:5432"
+
+  client:
+    build: ./java_client
+    restart: always
+    ports:
+      - "8050:8050"
+
